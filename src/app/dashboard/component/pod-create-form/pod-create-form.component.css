@@ -1,0 +1,14 @@
+.mat-form-field {
+    display: block;
+}
+
+textarea {
+    height: 50px;
+}
+.mat-dialog-content{
+    max-height: 165vh;
+    width: 400px;
+}
+.mat-dialog-container{
+    width: 400px;
+}

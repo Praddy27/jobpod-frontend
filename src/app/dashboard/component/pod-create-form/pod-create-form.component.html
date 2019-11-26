@@ -1,0 +1,59 @@
+<h2 mat-dialog-title>Create Pod Form</h2>
+
+
+<mat-dialog-content [formGroup]="podForm1">
+
+  <mat-form-field>
+    <input matInput placeholder="Pod Name" formControlName="pod_name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Language</mat-label>
+    <mat-select [formControl]="languageForm1" formControlName="language" name="language"  ngDefaultControl multiple>
+      <mat-option *ngFor="let language of languageList" [value]="language" >{{language}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Skill</mat-label>
+    <mat-select [formControl]="skillForm1"  formControlName="skill" name="skill" ngDefaultControl multiple>
+      <mat-option *ngFor="let skill of skillList" [value]="skill" >{{skill}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field   ngDefaultControl >
+      <input matInput [matDatepicker]="startDate" formControlName="startDate" placeholder="Choose a start date"  name="startDate">
+      <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+      <mat-datepicker #startDate></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field ngDefaultControl >
+    <input matInput [matDatepicker]="endDate" formControlName="endDate"  placeholder="Choose a end date"  name="endDate">
+    <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+    <mat-datepicker #endDate></mat-datepicker>
+</mat-form-field>
+
+
+  <mat-form-field>
+    <textarea matInput placeholder="Description" formControlName="description">
+        </textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Minimum user" formControlName="min_user">
+  </mat-form-field>
+
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+
+  <button class="mat-raised-button" mat-dialog-close>
+    Close
+  </button>
+
+  <button class="mat-raised-button mat-primary" (click)="createPod()">
+    Create
+  </button>
+
+</mat-dialog-actions>

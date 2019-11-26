@@ -1,0 +1,40 @@
+<div class="container">
+  <app-navbar title="Pod Table"></app-navbar>
+  <div class="row page-title">
+    <div *ngIf="this.pod; else templateName" class="col-md-8 col-md-offset-2">
+      <div class="row">
+        <div *ngFor="let item of array">
+          <div class="col-md-4 page-title">
+            <div class="card card-raised">
+              <h2>{{item.email_id}}</h2>
+              <h3 class="card-title">Pod Name: {{item.pod_name}}</h3>
+              <p class="card-description text-center">
+                Start Date : {{item.startDate | date:'dd/MM/yyyy'}}
+              </p>
+              <p class="card-description text-center">
+                End Date : {{item.endDate | date:'dd/MM/yyyy'}}
+              </p>
+              <p class="card-description text-center">
+                {{item.description}}
+              </p>
+
+              <div *ngIf="this.success">
+                <button mat-raised-button class="btn btn-rose btn-round"
+                  (click)="openAlert('confirm',item.id,item.email_id)">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <ng-template #templateName>
+       <h4><p>
+         
+           No Pod is assigned to you. 
+         
+       </p></h4>
+    </ng-template>
+  </div>
+</div>
