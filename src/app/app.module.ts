@@ -11,6 +11,7 @@ import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './dashboard/home/home.component';
+import { HomeCompanyComponent } from './dashboard/homeCompany/homeCompany.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import 'hammerjs';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -50,6 +51,7 @@ import { SidebarCompanyComponent } from './sidebar-company/sidebar-company.compo
     AppComponent,
     SidebarComponent,
     HomeComponent,
+    HomeCompanyComponent,
     ProfileComponent,
     NavbarComponent,
     FigurecardComponent,

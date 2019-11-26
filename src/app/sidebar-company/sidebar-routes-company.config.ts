@@ -1,5 +1,5 @@
 export const ROUTES = [
-    { path: '/dashboard', title: 'Dashboard', icon: 'dashboard', children: null },
+    { path: '/dashboard/company', title: 'Dashboard', icon: 'dashboard', children: null },
     { path: 'profileCompany', title: 'Company Profile', icon: 'person', children: null },
     { path: 'components/company-pod-page', title: 'My Pods', icon: 'group_work',  children: null},
     // { path: '#component', id: 'component', title: 'Component', icon: 'apps', children: [

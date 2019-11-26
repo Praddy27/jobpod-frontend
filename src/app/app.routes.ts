@@ -3,6 +3,7 @@
  */
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './dashboard/home/home.component';
+import { HomeCompanyComponent } from './dashboard/homeCompany/homeCompany.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { ProfileCandidateComponent} from './dashboard/profilecandidate/profile.component';
 import { TableComponent } from './dashboard/table/table.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'registerCompany', component: RegisterEmployeeComponent},
   {path: 'dashboard', component: RootComponent, children: [
     {path: '', component: HomeComponent},
+    {path: 'company', component: HomeCompanyComponent},
     {path: 'profileCompany', component: ProfileComponent},
     {path: 'profileCandidate', component: ProfileCandidateComponent},
     {path: 'table', component: TableComponent},
