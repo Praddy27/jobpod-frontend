@@ -85,6 +85,15 @@ export class ApiService {
     });
   }
 
+  searchCompanyDashboardPod(data): Observable<any> {
+    let url = `${this.baseUri}/company/get-dashboard`;
+    return this.http.get(url, {
+      params: {
+        'email_id': data
+      }
+    });
+  }
+
   //search users
   searchUsers(data): Observable<any> {
     let url = `${this.baseUri}/company/get-user`;
