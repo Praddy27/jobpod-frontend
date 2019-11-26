@@ -25,7 +25,7 @@ import { LoginCompanyComponent } from './page/logincompany/login.component';
 import { RootComponent } from './dashboard/root/root.component';
 import { RegisterComponent } from './page/register/register.component';
 import { RegisterEmployeeComponent } from './page/registeremployee/register.component';
-
+import { FullCalendarModule } from '@fullcalendar/angular';
 import { ProfileCandidateComponent} from './dashboard/profilecandidate/profile.component';
 import { LockComponent } from './page/lock/lock.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -93,7 +93,8 @@ import { SidebarCompanyComponent } from './sidebar-company/sidebar-company.compo
     MatDialogModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatRippleModule
+    MatRippleModule,
+    FullCalendarModule
   ],
   providers: [SettingsService, ApiService],
   entryComponents: [PodCreateFormComponent],
