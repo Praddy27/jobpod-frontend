@@ -73,6 +73,7 @@ export class CompanyPodPageComponent implements OnInit {
       'pod_id': podId
     }
 
+    
     this.router.navigate(['/dashboard/table', this.data]  , { skipLocationChange: true });
     // this.searchData = {
     //   'skill' : data

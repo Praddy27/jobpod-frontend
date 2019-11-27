@@ -36,7 +36,7 @@ export class LoginCompanyComponent implements OnInit {
         console.log('values', this);
         localStorage.setItem('type', 'company');
         localStorage.setItem('email_id', this.email_id)
-        this.router.navigate(['/dashboard/profileCompany', res] , { skipLocationChange: true });
+        this.router.navigate(['/dashboard/company', res] , { skipLocationChange: true });
         
 
         console.log('response', res);

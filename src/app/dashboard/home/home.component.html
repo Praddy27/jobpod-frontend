@@ -1,27 +1,122 @@
+<div class="container">
+  <app-navbar title="Dashboard"></app-navbar>
+  <div class="row" style="margin-top: 30px">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <app-figurecard title="13" headerIcon="weekend" category="Pods" footContent=""
+        linearColor="linear-gradient(60deg, #ffa726, #fb8c00)"
+        boxShadow="0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4)">
+      </app-figurecard>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <app-figurecard title="3" headerIcon="equalizer" category="Skills" footContent="Total Known Skill"
+        footerIcon="local_offer" linearColor="linear-gradient(60deg, #ef5350, #e53935)"
+        boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4)">
+      </app-figurecard>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <app-figurecard title="N/A" headerIcon="store" category="Revenue" footContent="Last 24 Hours"
+        footerIcon="date_range" linearColor="linear-gradient(60deg, #66bb6a, #43a047)"
+        boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4)">
+      </app-figurecard>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <app-figurecard title="N/A" headerIcon="mic" category="Followers" footContent="Just Updated" footerIcon="update"
+        linearColor="linear-gradient(60deg, #26c6da, #00acc1)"
+        boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4)">
+      </app-figurecard>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 10px">
+    <!-- <div class="col-md-4 col-sm-12 col-xs-12">
+      <app-imagecard image="../../../assets/img/card-2.jpeg" title="myJobPod"
+        desc="Using Work Pods to Create Exceptional Customer Experiences" position="Chennai, India">
+      </app-imagecard>
+    </div> -->
+    <div class="col-md-8 col-sm-12 col-xs-12">
+      <table class="table table-hover no-margins">
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Course</th>
+            <th>Scope</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><small>Pending...</small></td>
+            <td>Kotlin Fundamentals</td>
+            <td class="text-navy"> <i class="fa fa-level-up"></i> 24% </td>
+          </tr>
+          <tr>
+            <td><span class="label label-warning">Canceled</span> </td>
+            <td>I/O-efficient algorithms</td>
+            <td class="text-navy"> <i class="fa fa-level-up"></i> 66% </td>
+          </tr>
+          <tr>
+            <td><small>Pending...</small> </td>
+            <td>Cybersecurity Roles, Processes & Operating System Security</td>
+            <td class="text-navy"> <i class="fa fa-level-up"></i> 54% </td>
+          </tr>
+          <tr>
+            <td><small>Pending...</small> </td>
+            <td>Open Source Software Development, Linux and Git</td>
+            <td class="text-navy"> <i class="fa fa-level-up"></i> 12% </td>
+          </tr>
+          <tr>
+            <td><span class="label label-primary">Completed</span> </td>
+            <td>Operating Systems and You: Becoming a Power User</td>
+            <td class="text-navy"> <i class="fa fa-level-up"></i> 66% </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      Tasks
+      <ul class="todo-list m-t small-list">
+        <li>
+          <a href="#" class="check-link"><i class="fa fa-check-square"></i> </a>
+          <span class="m-l-xs todo-completed">Update Profile</span>
 
-<div class='app'>
+        </li>
+        <li>
+          <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+          <span class="m-l-xs">Download the contact list</span>
 
-  <div class='app-top'>
-    <!-- <button (click)='toggleVisible()'>toggle visible</button>
-    <button (click)='toggleWeekends()'>toggle weekends</button>
-    <button (click)='gotoPast()'>go to a date in the past</button>
-    (also, click a date/time to add an event) -->
+        </li>
+        <li>
+          <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+          <span class="m-l-xs">Enter your contact log</span>
+          <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
+        </li>
+        <li>
+          <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+          <span class="m-l-xs">Update your daily call list</span>
+        </li>
+        <li>
+          <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+          <span class="m-l-xs">Publish reports to Manager</span>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="col-md-4 col-sm-12 col-xs-12">
+      <app-imagecard
+        image="../../../assets/img/card-3.jpeg"
+        title="Office Studio"
+        desc="The place is close to Metro Station and bus stop just 2 min by walk and near..."
+        footerTitle="$1,119/night"
+        position="London, UK">
+      </app-imagecard>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <app-imagecard
+        image="../../../assets/img/card-1.jpeg"
+        title="Beautiful Castle"
+        desc="The place is close to Metro Station and bus stop just 2 min by walk and near..."
+        footerTitle="$459/night"
+        position="Milan, Italy">
+      </app-imagecard>
+    </div> -->
   </div>
 
-  <div class='app-calendar' *ngIf="calendarVisible">
-    <full-calendar
-      #calendar
-      defaultView="dayGridMonth"
-      [header]="{
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
-      }"
-      [plugins]="calendarPlugins"
-      [weekends]="calendarWeekends"
-      [events]="calendarEvents"
-      (dateClick)="handleDateClick($event)"
-    ></full-calendar>
-  </div>
 
 </div>

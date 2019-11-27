@@ -6,13 +6,15 @@
         <div *ngFor="let item of array">
           <div class="col-md-4 page-title">
             <div class="card card-raised">
-              <h2>{{item.email_id}}</h2>
-              <h3 class="card-title">Pod Name: {{item.pod_name}}</h3>
+              <h3>Pod Name: {{item.pod_name}}</h3>
+              <br>
+              <h3>{{item.email_id}}</h3>
+              <br>
               <p class="card-description text-center">
-                Start Date : {{item.startDate | date:'dd/MM/yyyy'}}
+                Start Date : {{item.startDate | date:'fullDate'}}
               </p>
               <p class="card-description text-center">
-                End Date : {{item.endDate | date:'dd/MM/yyyy'}}
+                End Date : {{item.endDate | date:'fullDate'}}
               </p>
               <p class="card-description text-center">
                 {{item.description}}
